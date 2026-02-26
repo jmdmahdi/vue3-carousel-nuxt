@@ -16,14 +16,14 @@ export default defineNuxtModule<CarouselOptions>({
 
     (['Carousel', 'Slide', 'Pagination', 'Navigation'] as string[]).map(c => ({
       name: `${prefix}${c}`,
-      filePath: 'vue3-carousel/dist/carousel',
+      filePath: 'jmd-vue3-carousel/dist/carousel',
       export: c,
     })).forEach((c) => {
       addComponent(c)
     })
 
     // Add slider css
-    nuxt.options.css.unshift('vue3-carousel/dist/carousel.css')
+    nuxt.options.css.unshift('jmd-vue3-carousel/dist/carousel.css')
   },
 })
 
